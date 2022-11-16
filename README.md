@@ -8,7 +8,7 @@ In terms of research flow, the first R script assumes and takes as input the pre
 ### Input data for scripts:
 
 * train_data.txt: train data with original variables (each line corresponds to a single comorbidity);
-* test.txt: test data with original variables (each line corresponds to a single comorbidity);;
+* test.txt: test data with original variables (each line corresponds to a single comorbidity);
 * score_dc_af.txt: table matching each comorbidity or clinical diagnose with a numerical score;
 * score_gen.txt: table matching each gender with a numerical score;
 * score_hosp.txt: table matching each healthcare unit with a numerical score;
