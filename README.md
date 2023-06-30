@@ -7,15 +7,16 @@ In terms of research flow, the first R script assumes and takes as input the pre
 
 ### Input data for scripts:
 
-* _train_data.txt_: train data with original variables (each line corresponds to a single comorbidity);
-* _test.txt_: test data with original variables (each line corresponds to a single comorbidity);
-* _score_dc_af.txt_: table matching each comorbidity or clinical diagnose with a numerical score;
-* _score_gen.txt_: table matching each gender with a numerical score;
-* _score_hosp.txt_: table matching each healthcare unit with a numerical score;
+* _E1 - R\_INPUT.xlsx_: main source of data;
+* _T1 - data.txt_: some preprocessing, mostly filters (result of R1 script);
+* _T2 - data_ph.txt_: computation of hospital occupancy/prevalence (result of R2 script);
+* _T3 - data_com.txt_: date columns were dropped;
+* _T4 - data train.csv_ + _T4 - data test.txt_: division of data between train and test;
+* **_E2 - train data to score.xlsx_**: _T4 - data train.csv_ is used to compute the score variables for gender, healthcare unit and comorbidities. The scores are then are used to build and test the model in R5, R6 and R7.
 
 ### R script flow:
 
-The R scripts follows the sequence **01_train_build_model.R**, **02_test_performance.R**, **03_plots.R**.
+The R scripts follows the sequence **R1- bdcomp.R**, **R2 - Prevalence.R**, **R3 -Evaluate the variables.R**, **R4 - split_train&test.R**, **R5 - train_build_model.R**, **R6 - test model.R**, **R7 - more plots.R**.
 
 ### R libraries:
 * base;
