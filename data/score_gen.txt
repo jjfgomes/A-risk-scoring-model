@@ -1,4 +1,0 @@
-gender	gen_sc1
-F	-2.92
-M	2.62
-
