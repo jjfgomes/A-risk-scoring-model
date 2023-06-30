@@ -1,5 +1,5 @@
 
-# Script to split the data into train (75%) and test (25%)
+# Script to split the data into train (75%) and test (25)
 
 rm(list=ls())
 library(base)
@@ -24,5 +24,6 @@ test <- data[ !(data$id%in%train_ind), ]
 
 
 write.csv(train,"T4 - data train.csv",row.names = FALSE)
+# (copied to "E2 - train data to score.xlsx")
 write.table(test,"T4 - data test.txt")
 
