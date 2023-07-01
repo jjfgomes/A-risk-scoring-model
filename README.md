@@ -3,7 +3,6 @@
 
 The following code underlies the analysis and findings of the paper "A risk scoring model of COVID-19 at hospital admission".
 
-In terms of research flow, the first R script assumes and takes as input the precomputed variable score versions of the categorical variables (gender, clinical diagnoses and healthcare unit).
 
 ### Input data for scripts:
 
